@@ -2,5 +2,6 @@ class Lien < ActiveRecord::Migration[5.2]       #migration permettant de créer 
   def change
     add_reference :strolls, :city, foreign_key: true
     add_reference :dogs, :city, foreign_key: true
+    add_reference :dogsitters, :city, foreign_key: true
   end
 end

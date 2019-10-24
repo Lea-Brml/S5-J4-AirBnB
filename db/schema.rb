@@ -30,14 +30,18 @@ ActiveRecord::Schema.define(version: 2019_10_24_200041) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "city_id"
+    t.index ["city_id"], name: "index_dogsitters_on_city_id"
   end
 
   create_table "joins", force: :cascade do |t|
     t.integer "stroll_id"
     t.integer "dog_id"
+    t.integer "dogsitter_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["dog_id"], name: "index_joins_on_dog_id"
+    t.index ["dogsitter_id"], name: "index_joins_on_dogsitter_id"
     t.index ["stroll_id"], name: "index_joins_on_stroll_id"
   end
 

@@ -19,6 +19,7 @@ end
 
 6.times do |index|
 
-  Dog.create(name: Faker::Creature::Dog.name, city:city_array.sample)     #creer les chiens avec l'id des villes 
+  Dog.create(name: Faker::Creature::Dog.name, city:city_array.sample)     #creer les chiens avec l'id des villes
+  Dogsitter.create(name: Faker::Name.first_name, city:city_array.sample)
 
 end
