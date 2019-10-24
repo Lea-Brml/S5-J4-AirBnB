@@ -1,6 +1,7 @@
 # README
 
-Ce programme permet de créer une BDD pour mettre en relation des chiens, leur dogsitter et les balades qu'ils vont réaliser. 
+Cet exercice permet de lier les BDD relatives à des docteurs, leurs patients et RDV. Ici, chaque patient peut avoir plusieurs docteurs et chaque docteur peut avoir plusieurs patients (relation n-n). Ce programme permet d'associer un patient et un docteur, et de leur attribuer un rendez-vous dans une ville donnée. Le fichier seeds génère automatiquement des instances aléatoires des classes Doctor, Patient, City et Appointment.
+Ce projet correspond au 2nd projet validant de la 4ème semaine de THP.
 
 
 This README would normally document whatever steps are necessary to get the

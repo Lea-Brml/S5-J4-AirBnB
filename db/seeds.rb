@@ -7,9 +7,18 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 
+city_array = []
+
 
 6.times do |index|
 
-  City.create(city_name: Faker::Address.city)
+  c = City.create(city_name: Faker::Address.city)       #créer les villes
+  city_array << c
+
+end
+
+6.times do |index|
+
+  Dog.create(name: Faker::Creature::Dog.name, city:city_array.sample)     #creer les chiens avec l'id des villes 
 
 end
